@@ -22,6 +22,23 @@
             {
                 Console.WriteLine("Please Enter Valid Name");
             }
+
+            Console.WriteLine("Enter Last Name");
+            Console.WriteLine("NOTE:- Last name starts with Cap and has minimum 3 characters");
+            //program for last name
+            string userlastname = Console.ReadLine();
+
+            value = userRegistration.validatelastname(userlastname);
+
+            if (value)
+            {
+                Console.WriteLine("Given Last Name Accepted");
+            }
+            else
+            {
+                Console.WriteLine("Please Enter Valid Last Name");
+            }
+
         }
     }
 }
