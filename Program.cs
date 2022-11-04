@@ -12,20 +12,20 @@
             UserRegistration userRegistration = new UserRegistration();
             bool value = userRegistration.validatename(userdata);
 
-
             if (value)
             {
                 Console.WriteLine("Given Name Accepted");
-
             }
             else
             {
                 Console.WriteLine("Please Enter Valid Name");
             }
 
+
+
             Console.WriteLine("Enter Last Name");
             Console.WriteLine("NOTE:- Last name starts with Cap and has minimum 3 characters");
-            //program for last name
+
             string userlastname = Console.ReadLine();
 
             value = userRegistration.validatelastname(userlastname);
@@ -38,7 +38,7 @@
             {
                 Console.WriteLine("Please Enter Valid Last Name");
             }
-            //program for email
+
             Console.WriteLine("Enter Mail ID");
             Console.WriteLine("NOTE:- E.g. abc.xyz@bl.co.in - Email has 3 mandatory parts (abc, bl&co) and 2 optional (xyz & in) with\r\nprecise @ and . positions");
 
@@ -54,7 +54,7 @@
             {
                 Console.WriteLine("Please Enter Valid Mail ID");
             }
-            //program for mobile number
+
             Console.WriteLine("Enter Mobile Number");
             Console.WriteLine("NOTE:- Mobile Format - E.g. 91 9919819801 - Country code follow by space and 10 digit number");
 
@@ -70,7 +70,6 @@
             {
                 Console.WriteLine("Please Enter Valid Mobile Number");
             }
-            //program for password
 
             Console.WriteLine("Enter Password");
             Console.WriteLine("NOTE:- Password minimum 8 Characters ");
@@ -86,6 +85,26 @@
             else
             {
                 Console.WriteLine("Please Enter Valid Password");
+            }
+
+            Console.WriteLine("\n");
+            Console.WriteLine("______________UC9____________________");
+            Console.WriteLine("SAMPLE EMAIL ID TEST");
+            SampleEmail sampleEmail = new SampleEmail();
+            Console.WriteLine("Enter Mail ID");
+            Console.WriteLine("NOTE:- E.g. abc.xyz@bl.co.in - Email has 3 mandatory parts (abc, bl&co) and 2 optional (xyz & in) with\r\nprecise @ and . positions");
+
+            string usermail1 = Console.ReadLine();
+
+            value = sampleEmail.validatemail(usermail1);
+
+            if (value)
+            {
+                Console.WriteLine("Given Mail ID  Accepted");
+            }
+            else
+            {
+                Console.WriteLine("Please Enter Valid Mail ID");
             }
         }
     }
