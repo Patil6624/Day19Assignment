@@ -31,6 +31,14 @@ namespace Day19_Assingment
             return Regex.IsMatch(userdata, REGEX_MAILID);
         }
 
+        public static string REGEX_MOBILE = "^[9]{1}[1]{1}[ ]{1}[6-9]{1}[0-9]{9}?";
+        //this function is use for MObile Number validate
+        public bool validatemobile(string userdata)
+        {
+            return Regex.IsMatch(userdata, REGEX_MOBILE);
+        }
+
 
     }
 }
+
