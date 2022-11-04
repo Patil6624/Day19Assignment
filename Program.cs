@@ -70,7 +70,23 @@
             {
                 Console.WriteLine("Please Enter Valid Mobile Number");
             }
+            //program for password
 
+            Console.WriteLine("Enter Password");
+            Console.WriteLine("NOTE:- Password minimum 8 Characters ");
+
+            string userpassword = Console.ReadLine();
+
+            value = userRegistration.validatepassword(userpassword);
+
+            if (value)
+            {
+                Console.WriteLine("Given Password  Accepted");
+            }
+            else
+            {
+                Console.WriteLine("Please Enter Valid Password");
+            }
         }
     }
 }

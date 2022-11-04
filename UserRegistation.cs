@@ -38,7 +38,12 @@ namespace Day19_Assingment
             return Regex.IsMatch(userdata, REGEX_MOBILE);
         }
 
+        public static string REGEX_PASSWORD = "[a-zA-z0-9]{8,}";
+        //this function is use for Password validate
+        public bool validatepassword(string userdata)
+        {
+            return Regex.IsMatch(userdata, REGEX_PASSWORD);
+        }
 
     }
 }
-
